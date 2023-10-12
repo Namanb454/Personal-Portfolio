@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react'
 import Typewriter from 'typewriter-effect';
 import Navbar from '../components/Navbar'
-import { Header } from './Header';
 import AnimatedButton from './AnimatedButton';
 import Aos from 'aos'
 
@@ -13,7 +12,7 @@ function Main() {
   return (
     <div className='bg-black'>
       <div className='lg:pb-0 pb-10 overflow-hidden relative'>
-        <Header />
+        
         <div className=" w-full lg:h-screen h-[70vh] overflow-hidden bg-cover"
           style={{
             backgroundImage: 'url(bg-video3.gif'
