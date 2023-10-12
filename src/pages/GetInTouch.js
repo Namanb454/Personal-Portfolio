@@ -96,26 +96,26 @@ function GetInTouch() {
   return (
     <div class="max-w-screen-lg mx-auto p-5 py-20">
       <div class="flex flex-col text-center w-full">
-        <h1 class="lg:w-[80%] mx-auto lg:text-5xl text-2xl font-bold text-center lg:px-5 py-5 text-white tracking-wider"> Get In
+        <h1 class="lg:w-[80%] mx-auto lg:text-5xl text-4xl font-bold text-center lg:px-5 py-5 text-white tracking-wider"> Get In
           <span className='lg:text-5xl text-4xl text-transparent bg-clip-text bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 tracking-widest'> Touch</span></h1>
 
       </div>
       <div class="grid grid-cols-1 md:grid-cols-12 border">
-        <div class=" md:col-span-4 p-10 text-white bg-gradient-to-br from-indigo-950 via-purple-950 to-pink-700">
-          <p class="mt-4 text-3xl leading-7 font-semibold uppercase tracking-wider">
+        <div class=" md:col-span-4 py-10 px-10 text-white bg-gradient-to-br from-indigo-950 via-purple-950 to-pink-700">
+          <p class="mt-4 text-3xl lg:mx-0 mx-auto w-fit leading-7 font-semibold uppercase tracking-wider">
             Social Links
           </p>
-          <div className='my-10'>
+          <div className='my-10 w-fit lg:mx-0 mx-auto'>
             <Contact />
           </div>
 
           <div class="flex items-center mt-5">
 
-            <a href='mailto: namanb454@gmail.com' class="text-base flex items-center tracking-wider"><AiOutlineMail className='items-center' />&nbsp; namanb454@gmail.com</a>
+            <a href='mailto: namanb454@gmail.com' class="text-base flex items-center tracking-wider lg:mx-0 mx-auto w-fit"><AiOutlineMail className='items-center' />&nbsp; namanb454@gmail.com</a>
           </div>
           <div class="flex items-center mt-5">
 
-            <a href='tel:+919599791185' class="text-base items-center flex"><AiOutlinePhone className='items-center tracking-wider' />&nbsp;+91 9599791185</a>
+            <a href='tel:+919599791185' class="text-base items-center flex mx-auto w-fit lg:mx-0 "><AiOutlinePhone className='items-center tracking-wider' />&nbsp;+91 9599791185</a>
           </div>
         </div>
 

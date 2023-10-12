@@ -55,7 +55,7 @@ const Navbar = () => {
         { 'id': '2', 'nav': 'About', 'link': '#about' },
         { 'id': '5', 'nav': 'Projects', 'link': '#projects' },
         { 'id': '3', 'nav': 'Services', 'link': '#services' },
-        { 'id': '5', 'nav': 'Resume', 'link': '#Demo' },
+        { 'id': '5', 'nav': 'Skills', 'link': '#features' },
         { 'id': '4', 'nav': 'Pricing', 'link': '#pricing' },
         // { 'id': '4', 'nav': 'Contact Us', 'link': '#contack' },
     ];
