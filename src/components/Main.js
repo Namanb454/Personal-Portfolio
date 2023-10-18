@@ -15,7 +15,7 @@ function Main() {
         
         <div className=" w-full lg:h-screen h-[70vh] overflow-hidden bg-cover"
           style={{
-            backgroundImage: 'url(bg-video3.gif'
+            backgroundImage: 'url(bg-video3.gif)'
           }}>
           <div className='lg:w-full w-full fixed text-white text-center z-10'>
             <Navbar />
@@ -91,7 +91,7 @@ function Main() {
 
               {/* Desktop */}
               <div class="lg:max-w-xl lg:w-1/3 md:w-1/2 w-0 z-0 ">
-                <img src="profile2.png" alt="Profile" className='items-start w-[50%] bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 mx-auto rounded-full h-full transition-transform' data-aos="zoom-in-left"
+                <img src="profile2.png" alt="Profile" className='items-start w-[100%] bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 mx-auto rounded-full h-full transition-transform' data-aos="zoom-in-left"
                   data-aos-duration="1000" />
               </div>
             </div>
