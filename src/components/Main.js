@@ -22,7 +22,7 @@ function Main() {
           </div>
 
           <section class="text-white body-font lg:my-32 my-24">
-            <div class=" w-full mx-auto px-10  md:flex-row flex flex-col items-center">
+            <div class=" w-full mx-auto px-10 md:flex-row flex flex-col items-center">
 
               {/* <div className="mockup-code w-full bg-opacity-50 items-start mr-auto">
                 <pre data-prefix="$"><code>Hello World</code></pre>
