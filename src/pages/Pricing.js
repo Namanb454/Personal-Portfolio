@@ -52,7 +52,7 @@ function Pricing() {
     return (
         <div>
             <section class="text-gray-600 body-font overflow-hidden">
-                <div class="container px-5 lg:py-20 py-10 mx-auto">
+                <div class="container px-5 lg:py-20 py-20 mx-auto">
 
                     <div class="flex flex-col text-center w-full">
                         <h1 class="lg:w-[80%] mx-auto lg:text-5xl text-2xl font-bold text-center lg:px-5 py-5 text-white tracking-wider" style={style} data-aos="zoom-out-right" data-aos-delay="100">All Businesses Can Benefit from

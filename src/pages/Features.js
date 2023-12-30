@@ -24,7 +24,7 @@ const GridComponent = () => {
   ];
 
   return (
-    <div className='lg:py-20'>
+    <div className='lg:py-20 py-20'>
       <div className='bg-white/60 lg:mx-[10%] mx-[5%] rounded-3xl'>
         <div class="flex flex-col text-center w-full py-5">
           <h1 class="lg:w-[80%] mx-auto lg:text-5xl text-4xl font-bold text-center lg:px-5 py-5 text-black tracking-wider" data-aos="zoom-out-right" data-aos-delay="100">Tools &
