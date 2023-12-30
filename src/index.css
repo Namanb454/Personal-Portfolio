@@ -1,12 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@layer base {
+@import url('https://fonts.googleapis.com/css2?family=Borel&family=Montserrat+Alternates&family=Montserrat:ital,wght@1,200&family=Mooli&family=Poppins:wght@400;500;600;700&family=Rubik+Doodle+Shadow&family=Tektur&family=Urbanist:wght@600&family=Ysabeau+Infant&display=swap');@layer base {
   html {
     @apply scroll-smooth;
   }
 }
+#naman{
+  font-family: Ysabeau Infant 
+}
+
 
 .progress-bar {
   left: 0;

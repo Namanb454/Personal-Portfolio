@@ -55,8 +55,8 @@ function Pricing() {
                 <div class="container px-5 lg:py-20 py-10 mx-auto">
 
                     <div class="flex flex-col text-center w-full">
-                        <h1 class="lg:w-[80%] mx-auto lg:text-5xl text-2xl font-bold text-center lg:px-5 py-5 text-white tracking-wider" style={style}>All Businesses Can Benefit from
-                            <span className='lg:text-5xl text-4xl text-transparent bg-clip-text bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 tracking-widest'> Flexible Payment</span> Options.</h1>
+                        <h1 class="lg:w-[80%] mx-auto lg:text-5xl text-2xl font-bold text-center lg:px-5 py-5 text-white tracking-wider" style={style} data-aos="zoom-out-right" data-aos-delay="100">All Businesses Can Benefit from
+                            <span className='lg:text-5xl text-4xl text-transparent bg-clip-text bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 tracking-widest' data-aos="zoom-out-right" data-aos-delay="300"> Flexible Payment</span> Options.</h1>
 
                     </div>
                     <div class="flex flex-wrap -m-4">

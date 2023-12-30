@@ -12,7 +12,7 @@ function AppRouter() {
     return (
         <Router>
             {/* <div className='bg-'> */}
-            <div className='bg-gradient-to-r from-[#0e0c27] from-60% via-purple-950 via-100% to-white to-100%'>
+            <div id='naman' className='bg-gradient-to-r from-[#0e0c27] from-60% via-purple-950 via-100% to-white to-100%'>
                 <Routes>
                     <Route exact path="/" element={<Home />} />
                     <Route exact path="/contact" element={<GetInTouch />} />

@@ -35,6 +35,7 @@ function Main() {
                       data-aos="zoom-out-right"
                       data-aos-duration="1000"
                       data-aos-delay="300"
+                      id='naman'
                     >
                       Hey!<span className='lg:text-5xl text-2xl text-white lg:text-left text-center'> Naman </span>this side
                     </span>

@@ -86,8 +86,9 @@ const Navbar = () => {
                         animate="visible"
                     >
                         <div className="flex-shrink-0">
-                            {/* <img className="h-8 w-8" src="/logo.svg" alt="Logo" /> */}
-                            <a href='#' className='lg:text-2xl text-xl font-semibold tracking-wider'>Naman Bansal</a>
+                            <a href='#' className='flex lg:text-2xl text-xl font-semibold tracking-wider'>
+                                <img src="profile2.png" alt="Profile" className='items-start w-10 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 mx-auto rounded-full h-full transition-transform' />
+                                Naman Bansal</a>
                         </div>
                         <motion.div className="hidden md:block ml-auto ">
                             <div className="ml-10 flex items-baseline space-x-4">
@@ -124,7 +125,7 @@ const Navbar = () => {
                     <motion.section initial={false}
                         animate={isOpen ? "open" : "closed"} className="MOBILE-MENU flex lg:hidden md:ml-auto" ref={menuRef}>
 
-                        <motion.div
+                        {/* <motion.div
                             className="HAMBURGER-ICON space-y-2"
                             whileTap={{ scale: 0.97 }}
                             onClick={() => setIsOpen(!isOpen)}
@@ -132,7 +133,15 @@ const Navbar = () => {
                             <span className="block h-0.5 w-7 bg-[#6527BE] transition-all ease-in-out duration-1000"></span>
                             <span className="block h-0.5 w-7 bg-[#6527BE] transition-all ease-in-out duration-1000"></span>
                             <span className="block h-0.5 w-7 bg-[#6527BE] transition-all ease-in-out duration-1000"></span>
-                        </motion.div>
+                        </motion.div> */}
+                        <div
+                            className="HAMBURGER-ICON space-y-2"
+                            onClick={() => setIsOpen((prev) => !prev)}
+                        >
+                            <span className="block h-0.5 w-4 ml-auto bg-[#6527BE] "></span>
+                            <span className="block h-0.5 w-7 ml-auto bg-[#6527BE] "></span>
+                            <span className="block h-0.5 w-5 ml-auto bg-[#6527BE] "></span>
+                        </div>
 
                         <div className={isOpen ? "showMenuNav rounded-b-2xl transition-all ease-in-out duration-1000" : "hideMenuNav"}>
                             <div
@@ -154,7 +163,7 @@ const Navbar = () => {
                             </div>
                             <div
                                 className={`${isOpen ? 'block' : 'hidden'
-                                    } md:hidden transition-all ease-in-out duration-1000`}
+                                    } md:hidden transition-all w-full px-2 ease-in-out duration-1000`}
                                 id="mobile-Homeu"
                                 ref={menuRef}
                             >
@@ -172,29 +181,32 @@ const Navbar = () => {
                                         },
                                     }}
                                     style={{ pointerEvents: isOpen ? "auto" : "none" }}
-                                    className="px-2 pt-4 pb-3 space-y-1 sm:px-3 transition-all ease-in-out duration-1000" ref={menuRef}>
+                                    className="px-2 pt-4 pb-3 space-y-5 sm:px-3 transition-all ease-in-out duration-1000" ref={menuRef}>
 
-                                    <div className="flex-shrink-0 transition-all ease-in-out duration-1000">
-                                        {/* <img className="h-8 w-8" src="/logo.svg" alt="Logo" /> */}
+                                    <a href='#'
+                                        onClick={() => setIsOpen(false)}
+                                        className="flex-shrink-0 flex transition-all ease-in-out duration-1000">
+                                        <img src="profile2.png" alt="Profile" className='items-start w-10 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-full h-full transition-transform' />
                                         <Link to='/' className='lg:text-2xl text-[#6527BE] text-xl font-semibold tracking-wider'>Naman Bansal</Link>
-                                    </div>
+                                    </a>
 
                                     {navbar.map(data => {
                                         return (
-
                                             <motion.a variants={itemVariants} key={data.id}
                                                 href={data.link}
-                                                className="text-[#6527BE] font-bold hover:tracking-widest scroll-smooth hover:scroll-auto transition-all block px-3 py-2 rounded-md text-base"
+                                                onClick={() => setIsOpen(false)}
+                                                className="text-[#6527BE] text-left font-bold hover:tracking-widest scroll-smooth hover:scroll-auto transition-all block px-3 py-2 rounded-md text-base"
                                             >
                                                 {data.nav}
-                                                <span className="absolute transition-all ease-in-out duration-1000 -bottom-1 left-1/2 w-0 h-[2px] bg-white group-hover:w-1/2 group-hover:transition-all "></span>
-                                                <span className="absolute transition-all ease-in-out duration-1000 -bottom-1 right-1/2 w-0 h-[2px] bg-white group-hover:w-1/2 group-hover:transition-all"></span>
+                                                {/* <span className="absolute transition-all ease-in-out duration-1000 -bottom-1 left-1/2 w-0 h-[2px] bg-black group-hover:w-1/2 group-hover:transition-all "></span> */}
+                                                {/* <span className="absolute transition-all ease-in-out duration-1000 -bottom-1 right-1/2 w-0 h-[2px] bg-black group-hover:w-1/2 group-hover:transition-all"></span> */}
                                             </motion.a>
                                         )
                                     })}
                                     <a
                                         href="#contact"
-                                        className="w-fit mx-auto text-white font-semibold bg-[#6527BE] hover:bg-white border-2 border-[#9681EB] transition-all hover:text-[#6527BE] block px-5 py-[5px] rounded-full text-base"
+                                        onClick={() => setIsOpen(false)}
+                                        className="w-fit text-white font-semibold bg-[#6527BE] hover:bg-white border-2 border-[#9681EB] transition-all hover:text-[#6527BE] block px-5 py-[5px] rounded-full text-base"
                                     >
                                         Get In Touch
                                     </a>
@@ -210,14 +222,14 @@ const Navbar = () => {
         display: block;
         position: absolute;
         width: 100%;
-        height: 40vh;
+        height: 100vh;
         top: 0;
         left: 0;
         background: white;
         z-index: 10;
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
+        // justify-content: space-evenly;
         align-items: center;
       }
     `}</style>
