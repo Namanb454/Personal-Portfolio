@@ -18,6 +18,7 @@ function Pricing() {
             "desc4": "Adding Data.",
             "desc5": "Economically viable",
             "desc6": "Prompt and Efficient Delivery",
+            delay: '200'
         },
         {
             "title": "Project Oriented",
@@ -28,6 +29,7 @@ function Pricing() {
             "desc4": "Easily Scalable",
             "desc5": "Advance Functionality",
             "desc6": "Prompt and Efficient Delivery",
+            delay: '300'
         },
         {
             "title": "Progression",
@@ -38,6 +40,7 @@ function Pricing() {
             "desc4": "High Performance.",
             "desc5": "Advance Functionality",
             "desc6": "Priority Support",
+            delay: '400'
         }
     ]
     const style = {
@@ -62,8 +65,7 @@ function Pricing() {
                             return (
 
                                 <div class="lg:py-10 py-2 lg:px-5 xl:w-1/3 md:w-1/2 w-full "
-                                    data-aos="fade-up"
-                                    data-aos-delay="300"
+                                    data-aos="zoom-out-right" data-aos-delay={data.delay}
                                 >
                                     <div class="h-full p-6 rounded-lg  flex flex-col relative overflow-hidden">
                                         <div className="absolute inset-0 h-full w-full rounded-full blur-3xl" />

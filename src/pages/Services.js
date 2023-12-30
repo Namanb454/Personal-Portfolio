@@ -15,13 +15,13 @@ function Services() {
             <section className="text-white body-font">
                 <div className="container px-5 lg:py-20 py-10 mx-auto">
 
-                    <h2 className='lg:text-5xl text-2xl my-5 font-bold text-center px-5 text-white tracking-wider'>Offer Professional<span className="lg:text-5xl text-4xl text-transparent bg-clip-text bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500"> Services</span></h2>
+                    <h2 className='lg:text-5xl text-2xl my-5 font-bold text-center px-5 text-white tracking-wider'>
+                        <span data-aos="zoom-out-right" data-aos-delay="100">Offer</span><span data-aos="zoom-out-right" data-aos-delay="200"> Professional</span><span className="lg:text-5xl text-4xl text-transparent bg-clip-text bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500" data-aos="zoom-out-right" data-aos-delay="300"> Services</span></h2>
                     <div className="flex flex-wrap -m-4">
                         {services.map(data => {
                             return (
                                 <div key={data.id} className="py-10 px-5 lg:w-1/3 bg-cover lg:h-[60vh] h-[40vh]"
-                                    data-aos="fade-up"
-                                    data-aos-delay="200"
+                                    data-aos="zoom-out-right" data-aos-delay={data.delay}
                                 >
                                     <div className="h-full bg-transparent border-[#8062D6] hover:bg-[#6527BE] hover:text- transition-all border-[1px] bg-opacity-75 lg:px-10 px-2 pt-10 pb-10 rounded-lg overflow-hidden relative">
                                         <div className='flex'>
